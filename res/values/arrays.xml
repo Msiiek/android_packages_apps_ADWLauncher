@@ -36,8 +36,10 @@
        </string-array>
        <string-array name="main_dock_entries">
                 <item>None (expand desktop)</item>
-                <item>3 Icons</item>
                 <item>5 Icons</item>
+                <item>4 Icons</item>
+                <item>3 Icons</item>
+                <item>2 Icons</item>
                 <item>1 Icon</item>
        </string-array>
        <string-array name="deletezone_entries">
@@ -50,6 +52,10 @@
        <string-array name="app_drawer_style_entries">
                 <item>Vertical plain</item>
                 <item>Horizontal paginated</item>
+       </string-array>
+       <string-array name="catalog_sorttype_entries">
+                <item>Name</item>
+                <item>Age</item>
        </string-array>
        <!-- Do not translate. -->
        <string-array translatable="false" name="menu_binding_values">
@@ -88,8 +94,10 @@
        </string-array>
        <string-array translatable="false" name="main_dock_values">
                 <item>0</item>
-                <item>1</item>
                 <item>2</item>
+                <item>5</item>
+                <item>1</item>
+                <item>4</item>
                 <item>3</item>
        </string-array>
        <string-array translatable="false" name="deletezone_values">

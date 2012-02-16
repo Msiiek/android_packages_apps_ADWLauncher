@@ -382,6 +382,8 @@ public final class Launcher extends Activity implements View.OnClickListener, On
     protected static final int DOCK_STYLE_3=1;
     protected static final int DOCK_STYLE_5=2;
     protected static final int DOCK_STYLE_1=3;
+    protected static final int DOCK_STYLE_2=4;
+    protected static final int DOCK_STYLE_4=5;
     private int mDockStyle=DOCK_STYLE_3;
     //DRAWER STYLES
     private final int[]mDrawerStyles={R.layout.old_drawer, R.layout.new_drawer};
@@ -3284,6 +3286,20 @@ public final class Launcher extends Activity implements View.OnClickListener, On
         case DOCK_STYLE_5:
             mRAB.setVisibility(View.VISIBLE);
             mLAB.setVisibility(View.VISIBLE);
+            mRAB2.setVisibility(View.VISIBLE);
+            mLAB2.setVisibility(View.VISIBLE);
+            if(!mDockBar.isOpen() && !showingPreviews)mDrawerToolbar.setVisibility(View.VISIBLE);
+            break;
+        case DOCK_STYLE_2:
+            mRAB.setVisibility(View.GONE);
+            mLAB.setVisibility(View.GONE);
+            mRAB2.setVisibility(View.VISIBLE);
+            mLAB2.setVisibility(View.GONE);
+            if(!mDockBar.isOpen() && !showingPreviews)mDrawerToolbar.setVisibility(View.VISIBLE);
+            break;
+        case DOCK_STYLE_4:
+            mRAB.setVisibility(View.VISIBLE);
+            mLAB.setVisibility(View.GONE);
             mRAB2.setVisibility(View.VISIBLE);
             mLAB2.setVisibility(View.VISIBLE);
             if(!mDockBar.isOpen() && !showingPreviews)mDrawerToolbar.setVisibility(View.VISIBLE);
